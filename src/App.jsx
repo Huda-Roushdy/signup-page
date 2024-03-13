@@ -5,11 +5,11 @@ function App() {
 
   return (
   <div className='layout row'>
-    <div className='desc col-md-6'>
+    <div className='desc col-lg-6'>
 
       
-      <div className="content col-md-7 m-auto" style={{position:'relative'}}>
-        <div style={{position:'absolute',left:'-2rem',top:'-6rem'}} >
+      <div className="content col-md-7 m-auto" >
+        <div className='logoDiv'>
         <img src="./street suite logo-04 1.svg" />
         </div>
       <h3>Hello! <br />
@@ -20,18 +20,12 @@ function App() {
 
 
     </div>
-    <div className=' col-md-6'>
+    <div className=' col-lg-6'>
       <div className='col-md-11 testCenter '>
         <SignupCard/>
 
     </div>
-
-    
-      
-
-
     </div>
-
    
   </div>
   )

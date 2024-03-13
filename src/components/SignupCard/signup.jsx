@@ -4,8 +4,6 @@ import Checkbox from '@mui/material/Checkbox';
 import FormControl from '@mui/joy/FormControl';
 import Input from '@mui/joy/Input';
 import FormLabel from '@mui/joy/FormLabel';
-import { createTheme } from '@mui/material/styles';
-import { ThemeProvider } from '@mui/material/styles';
 import './signup.css';
 
 
