@@ -30,7 +30,7 @@ sx={{
   <Input
     name="fullname"
     type="text"
-    placeholder="enter your full name"
+    placeholder="Enter your full name"
   />
 </div>
 
@@ -43,7 +43,7 @@ sx={{
   <Input
     name="email"
     type="email"
-    placeholder="enter your email"
+    placeholder="Enter your email"
   />
 </div>
   <div>
@@ -55,11 +55,11 @@ sx={{
   <Input
     name="password"
     type="text"
-    placeholder="enter your password"
+    placeholder="Enter your password"
   />
   </div>
   <FormControlLabel control={<Checkbox />} className='labelfont' label="Remember me" />
-  <FormControlLabel required control={<Checkbox />} className='labelfont' label="By creating an account,I have read and agreed to Street Suite's Terms and Conditions" />
+  <FormControlLabel required control={<Checkbox />} className='labelfont' label="By creating an account, I have read and agreed to Street Suite's Terms and Conditions" />
       
 
 </FormControl>
