@@ -16,7 +16,7 @@
     height: 100%;
     position: relative;
     background: rgba(35,53,70,1);
-    background: linear-gradient(285deg, rgb(23, 37, 49) 20%, rgb(58, 91, 121) 100%);
+    background: linear-gradient(265deg, rgb(23, 37, 49) 20%, rgb(48, 73, 97) 100%);
 }
 .forBorder{
     position:relative;
