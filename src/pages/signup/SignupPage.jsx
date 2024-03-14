@@ -2,7 +2,7 @@ import SignupCard from "../../components/SignupCard/signup";
 import './SignupPage.css';
 const SignupPage = ()=>{
     return(
-        <div className='layout row'>
+        <div className='Signuplayout row'>
         <div className='desc col-lg-6'>
     
           

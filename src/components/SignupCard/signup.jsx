@@ -10,13 +10,13 @@ import './signup.css';
 const SignupCard = ()=>{
     return(
       <div className='row m-auto col-md-9 forBorder'>
-         <div className='formPart'>
+         <div className='formPart formBGSignup'>
             <div className='inForm'>
                 <div className='col-md-10 formcontent'>
                 <h3>Welcome to <span className='highlight'>Street Suite!</span></h3>
                 <p>Create a new account.</p>
 
-<FormControl className="gap-3">
+<FormControl className="gap-4">
 
 <div>
 <FormLabel required className='mb-1 labelfont'
