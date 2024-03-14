@@ -8,8 +8,6 @@ import './signup.css';
 
 
 const SignupCard = ()=>{
-
-    // .MuiFormLabel-asterisk
     return(
       <div className='row m-auto col-md-9 forBorder'>
          <div className='formPart'>
