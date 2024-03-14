@@ -5,58 +5,10 @@ import FormLabel from '@mui/joy/FormLabel';
 import { TextareaAutosize as BaseTextareaAutosize } from '@mui/base/TextareaAutosize';
 import { styled } from '@mui/system';
 import './ContactPage.css';
-const grey = {
-    50: '#F3F6F9',
-    100: '#E5EAF2',
-    200: '#DAE2ED',
-    300: '#C7D0DD',
-    400: '#B0B8C4',
-    500: '#9DA8B7',
-    600: '#6B7A90',
-    700: '#434D5B',
-    800: '#303740',
-    900: '#1C2025',
-  };
-  const TextareaAutosize = styled(BaseTextareaAutosize)(
-    ({ theme }) => `
-    box-sizing: border-box;
-    width: 100%;
-    font-family: "Poppins", sans-serif;
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.5;
-    padding: 8px 12px;
-    border-radius: 8px;
-    min-height:30%;
-    color: ${theme.palette.mode === 'dark' ? grey[300] : grey[900]};
-    background: ${theme.palette.mode === 'dark' ? grey[900] : '#fff'};
-    border: 1px solid ${theme.palette.mode === 'dark' ? grey[700] : grey[200]};
-    box-shadow: 0px 2px 2px ${theme.palette.mode === 'dark' ? grey[900] : grey[50]};
-  
-    &:hover {
-      border-color: ${blue[400]};
-    }
-  
-    &:focus {
-      border-color: ${blue[400]};
-      box-shadow: 0 0 0 3px ${theme.palette.mode === 'dark' ? blue[600] : blue[200]};
-    }
-    &:focus-visible {
-      outline: 0;
-    }
-  `,
-  );
-  const blue = {
-    100: '#DAECFF',
-    200: '#b6daff',
-    400: '#53ACFF',
-    500: '#007FFF',
-    600: '#0072E5',
-    900: '#003A75',
-  };
+import FormComponent from '../../components/FormComponent';
+
 const ContactPage = ()=>{
     
-
 return(
     <div className='Msglayout'>
         <div className='forBG row'>
@@ -99,58 +51,13 @@ return(
                 </div>
             </div>
             </div>
+
             <div className="col-lg-6">
                 <div className="col-lg-8 forBorder m-auto">
                     <div className="formPart formBGMsg">
                         <div className='inForm'>
                         <div className='col-lg-9 m-auto'>
-                            <div>
-                            <h3>Welcome to <span className='highlight'>Street Suite!</span></h3>
-                        <p style={{paddingBottom:'2rem'}}>Send Us a Message!</p>
-                                    <FormControl className="gap-4">
-            <div>
-            <FormLabel required className='mb-1 labelfont'
-            sx={{
-            "& .MuiFormLabel-asterisk":{
-                color:'white'
-            }
-            }}>Full Name</FormLabel>
-            <Input
-                name="fullname"
-                type="text"
-                placeholder="Enter your full name"
-            />
-            </div>
-
-            <div>
-            <FormLabel required className='mb-1 labelfont' sx={{
-            "& .MuiFormLabel-asterisk":{
-                color:'white'
-            }
-            }}>Email</FormLabel>
-            <Input
-                name="email"
-                type="email"
-                placeholder="Enter your email"
-            />
-            </div>
-
-            <div>
-            <FormLabel className='mb-1 labelfont'sx={{
-            "& .MuiFormLabel-asterisk":{
-                color:'white'
-            }
-            }}>Message</FormLabel>
-
-            <TextareaAutosize aria-label="empty textarea" placeholder="......" />
-            </div>
-               
-
-            </FormControl>
-            <div className='btnContainer'> 
-    <button type="button" className='btnColor'>Submit</button>
-    </div>
-                            </div>
+                            <FormComponent purpose='Send Us a Message!' label1='Full Name' label2='Email' label3='Message' btnTxt='Submit' needCheckbox={false} textArea={true}/>
                         </div>
                     </div>
                 </div>

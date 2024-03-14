@@ -1,4 +1,6 @@
-import SignupCard from "../../components/SignupCard/signup";
+import FormComponent from "../../components/FormComponent";
+
+
 import './SignupPage.css';
 const SignupPage = ()=>{
     return(
@@ -20,7 +22,17 @@ const SignupPage = ()=>{
         </div>
         <div className=' col-lg-6'>
           <div className='col-md-11 testCenter '>
-            <SignupCard/>
+          <div className='row m-auto col-md-9 forBorder'>
+         <div className='formPart formBGSignup'>
+            <div className='inForm'>
+                <div className='col-md-10 formcontent'>
+                  <FormComponent purpose='Create a new account' label1='Full Name' label2='Email' label3='Password' needCheckbox={true} btnTxt='Sign Up' textArea={false}/>
+                </div>
+               
+            </div>
+
+        </div>
+      </div>
     
         </div>
         </div>
